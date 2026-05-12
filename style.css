@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #777;
+
+}
+
+.main-title{
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 8rem;
+    text-shadow: 
+    1px 0px 1px #ccc, 0px 1px 1px #eee, 
+    2px 1px 1px #ccc, 1px 2px 1px #eee,
+    3px 2px 1px #ccc, 2px 3px 1px #eee,
+    4px 3px 1px #ccc, 3px 4px 1px #eee,
+    5px 4px 1px #ccc, 4px 5px 1px #eee,
+    6px 5px 1px #ccc, 5px 6px 1px #eee,
+    7px 6px 1px #ccc;
+}
+
+.main-title h1{
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #655ff7;
+}
+
+.main-title h2{
+    font-size: 4rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.svg-img{
+   display: block;
+   margin: auto;
+}
+
+svg{
+    display: block;
+   margin: auto;
+}
+
+#clock{
+    animation: clockHand 5s infinite linear;
+
+    transform-box: fill-box;
+    transform-origin: bottom;
+}
+
+#leftTree, #righTree{
+    animation: tree 2s ease-in-out infinite alternate;
+    transform-box: fill-box;
+    transform-origin: bottom;
+}
+
+#man{
+    animation: manBody 1s ease-in-out infinite alternate;
+    transform-box: fill-box;
+    transform-origin: bottom;
+}
+
+#pc-circle{
+    fill: #6ace66;
+    stroke-width: 4;
+    animation: change-light 4s linear infinite alternate;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    background-color: #f5f5f5;
+    font-size: 1.3rem;
+}
+
+.info-highlight-box {
+    background-color: #f8f9fa;
+    border-left: 5px solid #6C63FF;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.info-highlight-box h3 {
+    color: #3F3D56;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.info-highlight-box p {
+    font-size: 1.6rem;
+    margin-bottom: 0;
+}
+
+.discord-banner {
+    background: linear-gradient(135deg, #7289da 0%, #5865F2 100%);
+    border-radius: 12px;
+    color: white;
+    box-shadow: 0 4px 15px rgba(88, 101, 242, 0.3);
+}
+
+.discord-banner h4 {
+    color: white;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.btn-discord {
+    background-color: white;
+    color: #5865F2;
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding: 10px 25px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    border: none;
+    text-decoration: none;
+}
+
+.btn-discord:hover {
+    background-color: #f6f6f6;
+    color: #4752C4;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-decoration: none;
+}
+
+/* Newsletter Custom Styles */
+.newsletter-section {
+    background-color: #ffffff;
+    border: 2px dashed #655ff7;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+}
+
+.newsletter-section h4 {
+    color: #3F3D56;
+    font-size: 2.4rem;
+    font-weight: 900;
+}
+
+.jotform-container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.spam-reassurance {
+    font-size: 1.2rem;
+    color: #999;
+    font-style: italic;
+}
+
+@keyframes clockHand{
+    from{
+        transform: rotateZ(0deg);
+    }
+    from{
+        transform: rotateZ(-360deg);
+    }
+}
+
+@keyframes manBody{
+    from{
+        transform: rotateX(0deg);
+    }
+    to{
+        transform: rotateX(10deg);
+    }
+}
+
+@keyframes tree{
+    from{
+        transform: rotateZ(10deg);
+    }
+    to{
+        transform: rotateZ(-20deg);
+    }
+}
+
+@keyframes change-light {
+    0% {
+        stroke: #cd61f8;
+      }
+      25% {
+        stroke: #6ace66;
+      }
+      75% {
+        stroke: #2995c0;
+      }
+      100% {
+        stroke: #e92949;
+      }
+  }
+
+  @media (min-width: 640px){
+    .main-title h1{
+        font-size: 3rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: #655ff7;
+    }
+
+    .main-title h2{
+        font-size: 3rem;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+
+    }
+
+    @media (min-width: 768px){
+       .main-title h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #655ff7;
+}
+
+        .main-title h2{
+            font-size: 4rem;
+            font-weight: 300;
+            text-transform: uppercase;
+        }
+
+    }
+
+    @media (min-width: 1024px){
+
+        .main-title h1{
+            font-size: 7rem;
+            text-transform: uppercase;
+            font-weight: 900;
+            color: #655ff7;
+        }
+
+        .main-title h2{
+            font-size: 5rem;
+            font-weight: 300;
+            text-transform: uppercase;
+        }
+
+    }
+.main-logo {
+    width: 180px;
+    height: auto;
+    display: block;
+    margin: 0 auto -3rem auto;
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.15));
+    transition: transform 0.3s ease;
+}
+
+.main-logo:hover {
+    transform: scale(1.05);
+}
+
+    @media (min-width: 1200px){
+
+        .main-title h1{
+            font-size: 5rem;
+            text-transform: uppercase;
+            font-weight: 900;
+            color: #655ff7;
+        }
+
+        .main-title h2{
+            font-size: 5rem;
+            font-weight: 300;
+            text-transform: uppercase;
+        }
+
+        .main-title{
+            text-align: center;
+            margin-top: 4rem;
+            margin-bottom: 4rem;
+        }
+
+    }
